@@ -3,19 +3,17 @@ import React from "react";
 import { productData } from "@/data";
 import Link from "next/link";
 import Product from "@/components/Product";
+import Pagination from "@/components/Pagination";
 
 const Products = () => {
   return (
     <>
-      <div className="products_list max-w-6xl">
+      <div className="products_list max-w-6xl p-8 md:p-16">
         {productData.map((product) => (
           <Product product={product} />
         ))}
       </div>
-      <div className=" mx-auto text-center">
-
-      <Link href="/products" className="button_outline ">Show More</Link>
-      </div>
+      <Pagination />
     </>
   );
 };

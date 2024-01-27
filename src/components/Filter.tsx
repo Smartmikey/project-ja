@@ -15,8 +15,8 @@ const Filter = () => {
             <p>Showing 1–16 of 32 results</p>
             
         </div>
-        <div>
-            <form className='sort'>
+        <div className='hidden md:inline-flex'>
+            <form className='sort '>
                 <label > Show 
                     <select>
                         <option>16</option>
