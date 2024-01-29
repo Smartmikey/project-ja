@@ -8,12 +8,12 @@ export const Header = () => {
     <header className="w-100 h-16 bg-white text-black">
       <nav className="nav_container">
         <div>
-          <Image src="/logo.png" alt="logo" width={150} height={80} />
+          <Link href='/' ><Image src="/logo.png" alt="logo" width={150} height={80} /></Link>
         </div>
         <div className="md:hidden"><Bars3BottomRightIcon className="h-6" /></div>
         <div className="hidden md:inline-flex">
           <ul className="nav_group">
-            <li className=""><Link href="#"> Home</Link></li>
+            <li className=""><Link href="/"> Home</Link></li>
             <li className=""><Link href="/products"> Shop</Link></li>
             <li className=""><Link href="#"> About</Link></li>
             <li className=""><Link href="#"> Contact</Link></li>
