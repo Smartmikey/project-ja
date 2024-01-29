@@ -7,8 +7,8 @@ const Products = () => {
   return (
     <>
       <div className="products_list">
-        {productData.slice(0, 8).map((product) => (
-          <Product product={product} />
+        {productData.slice(0, 8).map((product, index) => (
+          <Product key={index} product={product} />
         ))}
       </div>
       <div className=" mx-auto text-center">

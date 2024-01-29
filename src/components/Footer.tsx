@@ -61,8 +61,8 @@ const Footer = () => {
             </form>
         </div>
 
-        {data.map(item => (
-        <Accordion title={item.title} content={item.content} />
+        {data.map((item, index) => (
+        <Accordion key={index} title={item.title} content={item.content} />
       ))}
     </footer>
   )

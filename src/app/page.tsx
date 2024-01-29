@@ -4,7 +4,6 @@ import Products from "@/components/Products";
 import RangeSection from "@/components/RangeSection";
 import ShowRoom from "@/components/ShowRoom";
 import Title from "@/components/Title";
-import Image from "next/image";
 
 export default function Home() {
   return (

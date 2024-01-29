@@ -9,8 +9,8 @@ const Products = () => {
   return (
     <>
       <div className="products_list max-w-6xl p-8 md:p-16">
-        {productData.map((product) => (
-          <Product product={product} />
+        {productData.map((product, index) => (
+          <Product key={index} product={product} />
         ))}
       </div>
       <Pagination />
