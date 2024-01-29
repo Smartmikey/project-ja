@@ -9,7 +9,7 @@ type AccordionProps = {
 const Accordion = ({ title, content }: AccordionProps) => {
   const [isOpened, setOpened] = useState<boolean>(false)
   const [height, setHeight] = useState<string>("0px")
-  const contentElement = useRef<HTMLDivElement>(document.createElement("div"))
+  const contentElement = useRef<any>()
 
   const HandleOpening = () => {
     setOpened(!isOpened)

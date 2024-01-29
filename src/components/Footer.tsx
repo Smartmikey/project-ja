@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
-import Accordion from './Accordion'
+// import Accordion from './Accordion'
+import dynamic from 'next/dynamic'
 
 const Footer = () => {
+    const Accordion = dynamic(() => import('./Accordion'), { ssr: false })
     const data = [
         {
             title: "Link",
